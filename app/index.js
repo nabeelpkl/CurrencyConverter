@@ -1,8 +1,6 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import Themes from "./screens/Themes";
 import EStyleSheet from "react-native-extended-stylesheet";
-
+import Navigator from "./config/routes";
 EStyleSheet.build({
   $primaryBlue: '#4F6D7A',
   $primaryOrange: '#D57A66',
@@ -15,5 +13,5 @@ EStyleSheet.build({
   $lightGray: '#F0F0F0',
   $darkText: '#343434'
 });
-export default () => <Themes />;
+export default () => <Navigator />;
 
