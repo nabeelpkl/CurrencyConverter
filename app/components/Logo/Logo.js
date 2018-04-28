@@ -41,7 +41,10 @@ class Logo extends Component {
     };
 
     render() {
-        const imageStyle = [styles.logo, { width: this.imageWidth }]
+        const imageStyle = [
+            styles.logo,
+            { width: this.imageWidth },
+            this.props.tintColor ? { tintColor: this.props.tintColor } : null]
         return (
             <View style={styles.container}>
                 <ImageBackground resizeMode="contain" style={styles.containerImage} source={require('./images/background.png')}>
